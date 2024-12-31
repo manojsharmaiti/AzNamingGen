@@ -1308,7 +1308,7 @@
                     ConfigurationHelper.SetAppSetting("CustomToolName", String.Empty, false);
                     ConfigurationHelper.SetAppSetting("ConnectivityCheckEnabled", resetconfig.ConnectivityCheckEnabled!, false);
                     ConfigurationHelper.SetAppSetting("GenerationWebhook", String.Empty, true);
-                    ConfigurationHelper.SetAppSetting("ShowAdminDataToAllUsers", String.Empty, false);
+                    ConfigurationHelper.SetAppSetting("ShowAdminDataToAllUsers", String.Empty, true);
                     AdminLogService.PostItem(new AdminLogMessage() { Title = MessageTypesEnum.SUCCESS.ToString(), Message = "Site Settings reset!", Source = currentuser });
                     NavigationManager.NavigateTo("admin?reset=true", true);
                 }
